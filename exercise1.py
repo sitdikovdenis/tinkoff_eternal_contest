@@ -24,5 +24,6 @@ def get_total_spending(subscription_fee, max_traffic, mb_cost, plan_traffic):
     traffic_overrun = 0 if plan_traffic <= max_traffic else plan_traffic - max_traffic
     return traffic_overrun * mb_cost + subscription_fee
 
+
 A, B, C, D = [int(num) for num in input().split()]
 print(get_total_spending(A, B, C, D))
